@@ -1,4 +1,4 @@
 *.tfvars
 variables.tf
-.terraform
 .terraform*
+.tfstate*
