@@ -7,3 +7,12 @@ terraform {
   }
 }
 
+data "terraform_remote_state" "eip" {
+  backend = "s3"
+  config = {
+    bucket = "ter-state-file"
+    key    = "network/terraform.tfstate"
+    region = "ap-south-1"
+  }
+}
+
