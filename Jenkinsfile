@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Display Name'){
             steps{
-                sh "echo Hello World"
+                sh "echo Job ran from webhook"
             }
         }
     }
